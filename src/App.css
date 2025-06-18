@@ -1,0 +1,172 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4;
+  min-height: 100vh;
+  color: #333;
+}
+
+.app {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  color: #006064;
+}
+
+.setup-section label,
+.score-section p,
+.timer {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.setup-section select,
+.setup-section input,
+.setup-section button,
+.nav-buttons button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: #0097a7;
+  color: white;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #006064;
+}
+
+.timer {
+  font-weight: bold;
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.question-section {
+  margin: 20px 0;
+}
+
+.question-section button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f1f8e9;
+  color: #2e7d32;
+  border: 2px solid transparent;
+}
+
+.question-section button.selected {
+  background-color: #c8e6c9;
+  border-color: #2e7d32;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.score-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-section p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.score-section button {
+  width: auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+} 
+
+.score-section button.user-button {
+  background-color: #4caf50;
+  color: white;
+  font-size: x-large;
+  &:hover {
+    background-color: #388e3c;
+  }
+}
+
+.score-section button.admin-button {
+  background-color: #f44336;
+  color: white;
+  margin-top: 10px;
+  font-size: smaller;
+}
+
+.leaderboard ol {
+  padding-left: 20px;
+  text-align: left;
+  font-size: x-large;
+  
+}
+
+.review-section {
+  margin-top: 30px;
+  font-size: x-large;
+}
+
+.review-item {
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.review-item p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .nav-buttons button {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .timer {
+    font-size: 1rem;
+  }
+}
