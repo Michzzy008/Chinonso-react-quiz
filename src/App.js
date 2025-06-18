@@ -14,7 +14,7 @@ function App() {
   const [quizStarted, setQuizStarted] = useState(false);
   const [userAnswers, setUserAnswers] = useState([]);
   const [timeLeft, setTimeLeft] = useState(120);
-  const [isAdmin, setIsAdmin] = useState(false);
+
 
   const decodeHTML = (str) => {
     const textarea = document.createElement('textarea');
