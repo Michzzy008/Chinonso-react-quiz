@@ -60,7 +60,7 @@ function App() {
   useEffect(() => {
     if (!quizStarted) return;
     setLoading(true);
-
+    
     fetch(`https://opentdb.com/api.php?amount=15&type=multiple&category=${category}&difficulty=${difficulty}`)
       .then((res) => res.json())
       .then((data) => {
@@ -76,7 +76,7 @@ function App() {
         setLoading(false);
         alert('Failed to load questions.');
       });
-  }, [quizStarted]);
+  }, [quizStarted, category, difficulty]); 
 
   const handleAnswer = (selectedAnswer) => {
     const current = questions[index];
